@@ -14,7 +14,6 @@
 
     <!-- CSS базові -->
     <link rel="stylesheet" href="/css/styles.min.css" />
-    <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/all.min.css" />
     <link rel="stylesheet" href="/css/bb.css" />
     <link rel="stylesheet" href="/css/form-classic.css" />
@@ -22,14 +21,14 @@
     <link rel="stylesheet" href="/css/btn.css" />
     <link rel="stylesheet" href="/css/intlTelInput.css" />
     <!-- JS -->
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/utils.js"></script>
-    <script src="/js/timer.js"></script>
+    <script type="module" src="/js/jquery-3.6.0.min.js"></script>
+    <script type="module" src="/js/utils.js"></script>
+    <script type="module" src="/js/timer.js"></script>
   </head>
   <body>
     <main id="main-content"></main>
 
-    <script>
+    <script type="module">
       fetch('./partials/main.html')
         .then(res => res.text())
         .then(html => {
