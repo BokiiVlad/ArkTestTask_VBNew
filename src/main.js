@@ -1,8 +1,10 @@
-import '%BASE_URL%js/jquery-3.6.0.min.js';
-import '%BASE_URL%js/utils.js';
-import { initTimer } from '%BASE_URL%js/timer.js';
+
+import '/js/jquery-3.6.0.min.js';
+import '/js/utils.js';
+import { initTimer } from '/js/timer.js';
 
 const base = import.meta.env.BASE_URL;
+
 
 fetch(`${base}partials/main.html`)
   .then(res => res.text())
