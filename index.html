@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sq" style="padding-bottom: 0px">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Murgjit shqiptarë shërojnë diabetin në 30 ditë</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/favicon-BdWhqgaK.ico" type="image/x-icon" />
+
+    <!-- CSS базові -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <!-- JS -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/utils.js"></script>
+    <script src="/js/timer.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-k2F2dpx_.css">
+  </head>
+  <body>
+    <main id="main-content"></main>
+
+    <script>
+      fetch('./partials/main.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('main-content').innerHTML = html;
+
+          initTimer({
+            hoursSelector: '[data-h]',
+            minutesSelector: '[data-m]',
+            secondsSelector: '[data-s]',
+            expiredSelector: '[data-expired]',
+            startMinutes: 20,
+          });
+        });
+    </script>
+  </body>
+</html>
