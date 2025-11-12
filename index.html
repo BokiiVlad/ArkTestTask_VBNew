@@ -13,30 +13,12 @@
     <link rel="shortcut icon" href="/ArkTestTask_VB/assets/favicon-BdWhqgaK.ico" type="image/x-icon" />
 
     <!-- CSS базові -->
-    <link rel="stylesheet" href="/css/main.css" />
     <!-- JS -->
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/utils.js"></script>
-    <script src="/js/timer.js"></script>
+    <script type="module" crossorigin src="/ArkTestTask_VB/index.js"></script>
     <link rel="stylesheet" crossorigin href="/ArkTestTask_VB/assets/index-BaFecDqd.css">
   </head>
   <body>
     <main id="main-content"></main>
 
-    <script>
-      fetch('./partials/main.html')
-        .then(res => res.text())
-        .then(html => {
-          document.getElementById('main-content').innerHTML = html;
-
-          initTimer({
-            hoursSelector: '[data-h]',
-            minutesSelector: '[data-m]',
-            secondsSelector: '[data-s]',
-            expiredSelector: '[data-expired]',
-            startMinutes: 20,
-          });
-        });
-    </script>
   </body>
 </html>
